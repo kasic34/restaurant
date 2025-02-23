@@ -1,0 +1,30 @@
+.cook-header{
+    margin: clamp(4.688rem, 3.918rem + 3.85vw, 6.563rem) 0;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 54px;
+    color: #000;
+}
+.cook-header span{
+    color: #d67e34;
+}
+
+.cook-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media(max-width:860px){
+    .cook-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:17px;
+    }
+}

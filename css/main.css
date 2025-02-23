@@ -1,0 +1,21 @@
+/* base */
+@import "./base/base.css";
+@import "./base/reset.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/section-cards.css";
+@import "./blocks/history.css";
+@import "./blocks/button.css";
+@import "./blocks/order.css";
+@import "./blocks/dishes.css";
+@import "./blocks/menu.css";
+@import "./blocks/feedbeck.css";
+@import "./blocks/gallery.css";
+@import "./blocks/cook.css";
+@import "./blocks/footer.css";
+@import "./blocks/burger.css";
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');

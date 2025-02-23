@@ -1,0 +1,94 @@
+.section-cards{
+    margin-top: -70px;
+    margin-bottom: clamp(4.688rem, 2.764rem + 9.62vw, 9.375rem);
+}
+
+.section-card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.section-card{
+    width: 349px;
+    height: 328px;
+
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+}
+.section-card p{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #656363;
+}
+
+.section-card-title{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+.section-card-title spen{
+    color: #bc9060;
+}
+
+.section-card-img{
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+@media(max-width:1100px){
+    .section-card{
+        width: 320px;
+    }
+}
+
+@media(max-width:1150px){
+    .section-card-grid{
+        gap: 15px;
+    }
+}
+
+@media(max-width:1010px){
+    .section-card{
+        width: 290px;
+    }
+}
+
+@media(max-width:920px){
+    .section-card{
+        width: 270px;
+    }
+    .section-card p{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:860px){
+    .section-card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .section-card{
+        width: 349px;
+    }
+}
+
+@media(max-width:360px){
+    .section-card{
+        width: 290px;
+    }
+    
+}
+

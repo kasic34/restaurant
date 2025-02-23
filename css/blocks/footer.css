@@ -1,0 +1,11 @@
+.footer{
+    margin-top: clamp(1.313rem, -0.713rem + 10.13vw, 6.25rem);
+
+    height: 755px;
+
+    background-image: url(./../../img/footer/footer.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

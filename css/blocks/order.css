@@ -1,0 +1,57 @@
+.section-order{
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background-image: url(./../../img/order/order.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-text h1{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: clamp(1.875rem, 1.345rem + 2.65vw, 3.25rem);
+    color: #d67e34;
+    width: 601px;
+    margin-bottom: 20px;
+}
+
+.order-text p{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+@media(max-width:860px){
+    .order{
+        display: block;
+        text-align: center;
+    }
+
+    .order-text h1{
+        width: 100%;
+    }
+
+    .order-text p{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:575px){
+    .order-text p{
+        width: 290px;
+    }
+
+    .order-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

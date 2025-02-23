@@ -1,0 +1,123 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  .hamb {
+    display: none;
+  }
+  
+  .popup {
+    display: none;
+  }
+
+  .header-nav > li > a {
+    text-decoration: none;
+  }
+  
+  .navbar__wrap .header-nav {
+    display: flex;
+  }
+
+  .navbar__wrap .header-nav > li {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .navbar__wrap .header-nav > li > a {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 1100px) {
+    .navbar__wrap .header-nav {
+      display: none;
+    }
+  
+    .hamb {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamb__field {
+      
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: #FF7400;
+      transition: 0.2s;
+    }
+  
+    .popup {
+      position: fixed;
+      top: clamp(3.313rem, 2.107rem + 6.03vw, 6.25rem);
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #E5E5E5;
+      z-index: 100;
+      display: flex;
+      transition: 0.3s;
+    }
+  
+    .popup.open {
+      left: 0;
+    }
+  
+    .popup .header-nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 50px 0;
+      overflow: auto;
+    }
+  
+    .popup .header-nav > li {
+      width: 100%;
+    }
+  
+    .popup .header-nav > li > a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #3f3f3f;
+    }
+  
+    .popup .header-nav > li > a:hover {
+      background-color: rgba(122, 82, 179, 0.1);
+    }
+  
+    .hamb__field.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamb__field.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamb__field.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    body.noscroll {
+      overflow: hidden;
+    }
+  }
+
